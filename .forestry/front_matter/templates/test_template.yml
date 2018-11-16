@@ -1,0 +1,10 @@
+---
+label: Test_template
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: test_lable
+  label: Test lable
+  description: This is a test
+  default: sometextgoeshere righthere
