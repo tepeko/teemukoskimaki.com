@@ -31,7 +31,7 @@
           {%
           if site.greeting %}
         <!-- One -->
-          <section id="greeting" class="wrapper style1 special">
+          <!-- <section id="greeting" class="wrapper style1 special">
             <div class="inner">
               <header class="major">
                 <h2>{% if site.greeting.title %}{{ site.greeting.title }}{% else %}{{ site.title }}{% endif %}</h2>
@@ -57,7 +57,7 @@
           </section>{%
           endif %}
 
-        <!-- Two -->
+         Two -->
           <section id="landing_pages" class="wrapper alt style2">{%
             assign sorted_pages = site.pages | sort:"id" %}{%
             for my_page in sorted_pages %}{%
