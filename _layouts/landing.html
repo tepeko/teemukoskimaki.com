@@ -117,37 +117,35 @@
 		
 		<section class="wrapper style5">
 			<div class="inner">
-				<section class="wrapper style5">
-				  <form id="sendemail" method="post" action="{{ site.data.tokens.mailaction }}">
-				    <div class="row uniform">
-				      <div class="6u 12u$(xsmall)">
-				        <input type="text" name="name" id="name" value="" placeholder="Name" />
-				      </div>
-				      <div class="6u$ 12u$(xsmall)">
-				        <input required type="email" name="email" id="email" value="" placeholder="Email" />
-				      </div>
-				      <div class="12u$">
-				        <input required type="text" minlength="2" name="subject" id="subject" value="" placeholder="Subject" />
-				      </div>
-				      <div class="12u$">
-				        <textarea required name="textbody" id="textbody" placeholder="Type your message" rows="6"></textarea>
-				      </div>
-				      <div class="6u$ 12u$(xsmall)">
-				        <img src="{{ site.data.tokens.captchascript }}"/><br />
-				        <input required type="text" name="captcha" id="captcha" placeholder="Type the numbers you see" />
-				      </div>
-				      <div class="12u$">
-				        <ul class="actions">
-				          <li><input type="submit" value="Send Message" class="special" /></li>
-				        </ul>
-				      </div>
-				    </div>
-				    <input type="hidden" name="success"
-				           value="{{ '/contact-success' | prepend: site.baseurl | prepend: site.url }}" />
-				    <input type="hidden" name="failure"
-				           value="{{ '/contact-failure' | prepend: site.baseurl | prepend: site.url }}" />
-				  </form>
-				</section>
+			  <section class="wrapper style5">
+			    <form id="sendemail" method="post" action="" novalidate="novalidate">
+			      <div class="row uniform">
+			        <div class="6u 12u$(xsmall)">
+			          <input type="text" name="name" id="name" value="" placeholder="Name" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+			        </div>
+			        <div class="6u$ 12u$(xsmall)">
+			          <input required="" type="email" name="email" id="email" value="" placeholder="Email" aria-required="true">
+			        </div>
+			        <div class="12u$">
+			          <input required="" type="text" minlength="2" name="subject" id="subject" value="" placeholder="Subject" aria-required="true">
+			        </div>
+			        <div class="12u$">
+			          <textarea required="" name="textbody" id="textbody" placeholder="Type your message" rows="6" aria-required="true"></textarea>
+			        </div>
+			        <div class="6u$ 12u$(xsmall)">
+			          <img src=""><br>
+			          <input required="" type="text" name="captcha" id="captcha" placeholder="Type the numbers you see" aria-required="true">
+			        </div>
+			        <div class="12u$">
+			          <ul class="actions">
+			            <li><input type="submit" value="Send Message" class="special"></li>
+			          </ul>
+			        </div>
+			      </div>
+			      <input type="hidden" name="success" value="https://github.com/tepeko/teemukoskimaki.com/contact-success">
+			      <input type="hidden" name="failure" value="https://github.com/tepeko/teemukoskimaki.com/contact-failure">
+			    </form>
+			  </section>
 			</div>
 		</section>
 
