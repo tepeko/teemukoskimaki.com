@@ -23,9 +23,9 @@
               -->
             </div>{%
             if site.greeting %}
-            <a href="#greeting" class="more scrolly">Continue</a>{%
-            else %}
             <a href="#landing_pages" class="more scrolly">Continue</a>{%
+            else %}
+            <a href="#landing_features" class="more scrolly">Continue</a>{%
             endif %}
           </section>
           {%
@@ -114,6 +114,18 @@
       endif %}
 
          <!-- Contact -->
+		---
+		key: 3
+		title: Contact
+		permalink: /contact/
+		options: nolanding
+		excerpt: Get in touch
+		background-image: caustic_light.jpg
+		script-includes:
+		  - /js/jquery.validate.min.js
+		script: |
+		  $("#sendemail").validate();
+		---
 		<section>
 		  <form id="sendemail" method="post" action="{{ site.data.tokens.mailaction }}">
 		    <div class="row uniform">
